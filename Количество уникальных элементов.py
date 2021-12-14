@@ -14,11 +14,15 @@
 
 a = list(map(int, input().split()))
 
-for i in range (0,len(a)):
-    for j in range (i+1,len(a)):
-          if a[j]==a[i]:
-                a.pop(j)
-     
+u = [a[0]]
 
-print(len(a))
-        
+for i in range (0,len(a)):
+    ucount = 0
+    for j in range (0,len(u)):
+          if a[i] == u[j]:
+                ucount += 1
+               
+    if ucount==0: 
+        u.append(a[i])
+
+print(len(u))
