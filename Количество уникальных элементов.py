@@ -14,7 +14,11 @@
 
 a = list(map(int, input().split()))
 
-res = list(set(a)) #есть такой оператор set - если его нельзя использовать в задаче - дай знать
+for i in range (0,len(a)):
+    for j in range (i+1,len(a)):
+          if a[j]==a[i]:
+                a.pop(j)
+     
 
-print(len(res))
+print(len(a))
         
