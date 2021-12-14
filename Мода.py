@@ -24,6 +24,7 @@ s = list(set(a)) # чтобы не перебирать все эдементы 
 
 for i in range(len(s)):
     if a.count(s[i]) > max: #считаем, сколько в исходном массиве очередных вариантов чисел
+        max = a.count(s[i])
         res = s[i]
 
 print(res)
