@@ -1,6 +1,6 @@
-a = int(input())
-b = int(input())
-c = int(input())
+a = float(input()) #В протоколе написано что ошибка во время выполнения программы
+b = float(input()) #Там нужно float
+c = float(input())
 if (a + b <= c) or (a + c <= b) or (b + c <= a):
     print(0)
 else:
