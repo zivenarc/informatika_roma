@@ -1,0 +1,7 @@
+def kmerny(k, a):
+  for i in range(k):
+    a[i] = [[0] * 2]
+    return kmerny(i, a)
+k = int(input())
+a = [0, 0]
+print(kmerny(k, a))
